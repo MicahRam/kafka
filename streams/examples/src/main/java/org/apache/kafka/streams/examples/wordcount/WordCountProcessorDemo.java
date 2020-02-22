@@ -16,8 +16,8 @@
  */
 package org.apache.kafka.streams.examples.wordcount;
 
-import java.time.Duration;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.common.header.internals.RecordHeader;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.KafkaStreams;
 import org.apache.kafka.streams.KeyValue;
@@ -31,9 +31,11 @@ import org.apache.kafka.streams.state.KeyValueIterator;
 import org.apache.kafka.streams.state.KeyValueStore;
 import org.apache.kafka.streams.state.Stores;
 
+import java.time.Duration;
 import java.util.Locale;
 import java.util.Properties;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Demonstrates, using the low-level Processor APIs, how to implement the WordCount program
@@ -52,6 +54,8 @@ import java.util.concurrent.CountDownLatch;
  */
 public final class WordCountProcessorDemo {
 
+    private static AtomicInteger globalCounter = new AtomicInteger();
+
     static class MyProcessorSupplier implements ProcessorSupplier<String, String> {
 
         @Override
@@ -64,9 +68,9 @@ public final class WordCountProcessorDemo {
                 @SuppressWarnings("unchecked")
                 public void init(final ProcessorContext context) {
                     this.context = context;
-                    this.context.schedule(Duration.ofSeconds(1), PunctuationType.STREAM_TIME, timestamp -> {
+                    this.context.schedule(Duration.ofSeconds(1), PunctuationType.WALL_CLOCK_TIME, timestamp -> {
+                        System.out.println("----------- " + timestamp + " ----------- ");
                         try (final KeyValueIterator<String, Integer> iter = kvStore.all()) {
-                            System.out.println("----------- " + timestamp + " ----------- ");
 
                             while (iter.hasNext()) {
                                 final KeyValue<String, Integer> entry = iter.next();
@@ -76,6 +80,8 @@ public final class WordCountProcessorDemo {
                                 context.forward(entry.key, entry.value.toString());
                             }
                         }
+                        context.headers().add(new RecordHeader("" + globalCounter.incrementAndGet(), (byte[]) null));
+                        context.headers().forEach(header -> System.out.println(header.toString()));
                     });
                     this.kvStore = (KeyValueStore<String, Integer>) context.getStateStore("Counts");
                 }
@@ -98,7 +104,8 @@ public final class WordCountProcessorDemo {
                 }
 
                 @Override
-                public void close() {}
+                public void close() {
+                }
             };
         }
     }
@@ -120,10 +127,10 @@ public final class WordCountProcessorDemo {
 
         builder.addProcessor("Process", new MyProcessorSupplier(), "Source");
         builder.addStateStore(Stores.keyValueStoreBuilder(
-                Stores.inMemoryKeyValueStore("Counts"),
-                Serdes.String(),
-                Serdes.Integer()),
-                "Process");
+            Stores.inMemoryKeyValueStore("Counts"),
+            Serdes.String(),
+            Serdes.Integer()),
+            "Process");
 
         builder.addSink("Sink", "streams-wordcount-processor-output", "Process");
 
@@ -140,6 +147,7 @@ public final class WordCountProcessorDemo {
         });
 
         try {
+            System.out.println("Starting!");
             streams.start();
             latch.await();
         } catch (final Throwable e) {
