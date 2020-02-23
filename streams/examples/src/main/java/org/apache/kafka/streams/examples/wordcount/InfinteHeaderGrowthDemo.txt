@@ -1,0 +1,1883 @@
+> Task :streams:examples:InfiniteHeaderGrowthDemo.main()
+log4j:WARN No appenders could be found for logger (org.apache.kafka.streams.StreamsConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting!
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:2
+		0 : Added from partition 0
+		1 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:2
+		0 : Added from partition 0
+		1 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:3
+		0 : Added from partition 0
+		1 : Added from partition 1
+		3 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:3
+		0 : Added from partition 0
+		1 : Added from partition 1
+		3 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:4
+		0 : Added from partition 0
+		1 : Added from partition 1
+		3 : Added from partition 1
+		4 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:5
+		0 : Added from partition 0
+		1 : Added from partition 1
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:6
+		0 : Added from partition 0
+		1 : Added from partition 1
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		6 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:7
+		0 : Added from partition 0
+		1 : Added from partition 1
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		6 : Added from partition 1
+		7 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:9
+		0 : Added from partition 0
+		1 : Added from partition 1
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:8
+		0 : Added from partition 0
+		1 : Added from partition 1
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:2
+		0 : Added from partition 1
+		1 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:2
+		0 : Added from partition 1
+		1 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:4
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:4
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:6
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:6
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:7
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		7 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:7
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		7 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:9
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		7 : Added from partition 1
+		8 : Added from partition 0
+		9 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:9
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		7 : Added from partition 1
+		8 : Added from partition 0
+		9 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:11
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		7 : Added from partition 1
+		8 : Added from partition 0
+		9 : Added from partition 1
+		11 : Added from partition 0
+		10 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:11
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		7 : Added from partition 1
+		8 : Added from partition 0
+		9 : Added from partition 1
+		11 : Added from partition 0
+		10 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:12
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		7 : Added from partition 1
+		8 : Added from partition 0
+		9 : Added from partition 1
+		11 : Added from partition 0
+		10 : Added from partition 1
+		12 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:13
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		7 : Added from partition 1
+		8 : Added from partition 0
+		9 : Added from partition 1
+		11 : Added from partition 0
+		10 : Added from partition 1
+		12 : Added from partition 0
+		13 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:15
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		7 : Added from partition 1
+		8 : Added from partition 0
+		9 : Added from partition 1
+		11 : Added from partition 0
+		10 : Added from partition 1
+		12 : Added from partition 0
+		13 : Added from partition 1
+		15 : Added from partition 1
+		14 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:15
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 0
+		3 : Added from partition 1
+		4 : Added from partition 1
+		5 : Added from partition 0
+		7 : Added from partition 1
+		8 : Added from partition 0
+		9 : Added from partition 1
+		11 : Added from partition 0
+		10 : Added from partition 1
+		12 : Added from partition 0
+		13 : Added from partition 1
+		15 : Added from partition 1
+		14 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:1
+		0 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:2
+		0 : Added from partition 1
+		1 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:3
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:4
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:5
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:6
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:7
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:8
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:9
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:10
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:11
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:12
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:13
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:14
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+
+----------- punctuate count 0 -----------
+	 partition=1
+	 header size:1
+
+----------- punctuate count 1 -----------
+	 partition=0
+	 header size:2
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:1
+		0 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:2
+		0 : Added from partition 1
+		1 : Added from partition 0
+
+----------- punctuate count 2 -----------
+	 partition=1
+	 header size:3
+
+----------- punctuate count 3 -----------
+	 partition=0
+	 header size:4
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:3
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:4
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+
+----------- punctuate count 4 -----------
+	 partition=0
+	 header size:5
+
+----------- punctuate count 5 -----------
+	 partition=1
+	 header size:6
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:5
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:6
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+
+----------- punctuate count 6 -----------
+	 partition=1
+	 header size:7
+
+----------- punctuate count 7 -----------
+	 partition=0
+	 header size:8
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:7
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:8
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+
+----------- punctuate count 8 -----------
+	 partition=1
+	 header size:9
+
+----------- punctuate count 9 -----------
+	 partition=0
+	 header size:10
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:9
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:10
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+
+----------- punctuate count 10 -----------
+	 partition=1
+	 header size:11
+
+----------- punctuate count 11 -----------
+	 partition=0
+	 header size:12
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:11
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:12
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+
+----------- punctuate count 12 -----------
+	 partition=1
+	 header size:13
+
+----------- punctuate count 13 -----------
+	 partition=0
+	 header size:14
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:13
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:14
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+
+----------- punctuate count 14 -----------
+	 partition=0
+	 header size:15
+
+----------- punctuate count 15 -----------
+	 partition=1
+	 header size:16
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:15
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:16
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+
+----------- punctuate count 16 -----------
+	 partition=0
+	 header size:18
+
+----------- punctuate count 17 -----------
+	 partition=1
+	 header size:18
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:18
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:18
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+
+----------- punctuate count 18 -----------
+	 partition=1
+	 header size:19
+
+----------- punctuate count 19 -----------
+	 partition=0
+	 header size:20
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:19
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:20
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+
+----------- punctuate count 20 -----------
+	 partition=0
+	 header size:21
+
+----------- punctuate count 21 -----------
+	 partition=1
+	 header size:21
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:21
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:21
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+
+----------- punctuate count 22 -----------
+	 partition=1
+	 header size:22
+
+----------- punctuate count 23 -----------
+	 partition=0
+	 header size:23
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:22
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:23
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+
+----------- punctuate count 24 -----------
+	 partition=1
+	 header size:24
+
+----------- punctuate count 25 -----------
+	 partition=0
+	 header size:25
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:24
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:25
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+
+----------- punctuate count 26 -----------
+	 partition=1
+	 header size:26
+
+----------- punctuate count 27 -----------
+	 partition=0
+	 header size:27
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:26
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:27
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+
+----------- punctuate count 28 -----------
+	 partition=0
+	 header size:28
+
+----------- punctuate count 29 -----------
+	 partition=1
+	 header size:29
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:28
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:29
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+
+----------- punctuate count 30 -----------
+	 partition=1
+	 header size:30
+
+----------- punctuate count 31 -----------
+	 partition=0
+	 header size:31
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:30
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:31
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+
+----------- punctuate count 32 -----------
+	 partition=1
+	 header size:32
+
+----------- punctuate count 33 -----------
+	 partition=0
+	 header size:33
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:32
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:33
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+
+----------- punctuate count 34 -----------
+	 partition=1
+	 header size:34
+
+----------- punctuate count 35 -----------
+	 partition=0
+	 header size:35
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:34
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:35
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+
+----------- punctuate count 36 -----------
+	 partition=1
+	 header size:36
+
+----------- punctuate count 37 -----------
+	 partition=0
+	 header size:37
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:36
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+		36 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:37
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+		36 : Added from partition 1
+		37 : Added from partition 0
+
+----------- punctuate count 38 -----------
+	 partition=1
+	 header size:38
+
+----------- punctuate count 39 -----------
+	 partition=0
+	 header size:39
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:38
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+		36 : Added from partition 1
+		37 : Added from partition 0
+		38 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:39
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+		36 : Added from partition 1
+		37 : Added from partition 0
+		38 : Added from partition 1
+		39 : Added from partition 0
+
+----------- punctuate count 40 -----------
+	 partition=1
+	 header size:40
+
+----------- punctuate count 41 -----------
+	 partition=0
+	 header size:41
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:40
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+		36 : Added from partition 1
+		37 : Added from partition 0
+		38 : Added from partition 1
+		39 : Added from partition 0
+		40 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:41
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+		36 : Added from partition 1
+		37 : Added from partition 0
+		38 : Added from partition 1
+		39 : Added from partition 0
+		40 : Added from partition 1
+		41 : Added from partition 0
+
+----------- punctuate count 42 -----------
+	 partition=0
+	 header size:42
+
+----------- punctuate count 43 -----------
+	 partition=1
+	 header size:43
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:42
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+		36 : Added from partition 1
+		37 : Added from partition 0
+		38 : Added from partition 1
+		39 : Added from partition 0
+		40 : Added from partition 1
+		41 : Added from partition 0
+		42 : Added from partition 0
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:43
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+		36 : Added from partition 1
+		37 : Added from partition 0
+		38 : Added from partition 1
+		39 : Added from partition 0
+		40 : Added from partition 1
+		41 : Added from partition 0
+		42 : Added from partition 0
+		43 : Added from partition 1
+
+----------- punctuate count 45 -----------
+	 partition=1
+	 header size:44
+
+----------- punctuate count 44 -----------
+	 partition=0
+	 header size:44
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:44
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+		36 : Added from partition 1
+		37 : Added from partition 0
+		38 : Added from partition 1
+		39 : Added from partition 0
+		40 : Added from partition 1
+		41 : Added from partition 0
+		42 : Added from partition 0
+		43 : Added from partition 1
+		45 : Added from partition 1
+
+----------- Received from sink topic -----------
+	 partition=0
+	 header size:44
+		0 : Added from partition 1
+		1 : Added from partition 0
+		2 : Added from partition 1
+		3 : Added from partition 0
+		4 : Added from partition 0
+		5 : Added from partition 1
+		6 : Added from partition 1
+		7 : Added from partition 0
+		8 : Added from partition 1
+		9 : Added from partition 0
+		10 : Added from partition 1
+		11 : Added from partition 0
+		12 : Added from partition 1
+		13 : Added from partition 0
+		14 : Added from partition 0
+		15 : Added from partition 1
+		17 : Added from partition 1
+		16 : Added from partition 0
+		18 : Added from partition 1
+		19 : Added from partition 0
+		20 : Added from partition 0
+		22 : Added from partition 1
+		23 : Added from partition 0
+		24 : Added from partition 1
+		25 : Added from partition 0
+		26 : Added from partition 1
+		27 : Added from partition 0
+		28 : Added from partition 0
+		29 : Added from partition 1
+		30 : Added from partition 1
+		31 : Added from partition 0
+		32 : Added from partition 1
+		33 : Added from partition 0
+		34 : Added from partition 1
+		35 : Added from partition 0
+		36 : Added from partition 1
+		37 : Added from partition 0
+		38 : Added from partition 1
+		39 : Added from partition 0
+		40 : Added from partition 1
+		41 : Added from partition 0
+		42 : Added from partition 0
+		43 : Added from partition 1
+		45 : Added from partition 1
+
+
+> Task :streams:examples:InfiniteHeaderGrowthDemo.main() FAILED
+
+Execution failed for task ':streams:examples:InfiniteHeaderGrowthDemo.main()'.
+> Process 'command '/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/bin/java'' finished with non-zero exit value 143
+
+

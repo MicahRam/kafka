@@ -1,0 +1,217 @@
+> Task :streams:examples:ConcurrentModificationExceptionDemo.main()
+log4j:WARN No appenders could be found for logger (org.apache.kafka.streams.StreamsConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting!
+----------- punctuate count 1 -----------
+	 partition=0
+	 header count:0
+
+----------- punctuate count 0 -----------
+	 partition=1
+	 header count:0
+
+----------- punctuate count 3 -----------
+	 partition=0
+	 header count:2
+
+----------- punctuate count 2 -----------
+	 partition=1
+	 header count:2
+
+----------- punctuate count 4 -----------
+	 partition=0
+	 header count:4
+
+----------- punctuate count 5 -----------
+	 partition=1
+	 header count:4
+
+----------- punctuate count 6 -----------
+	 partition=1
+	 header count:6
+
+----------- punctuate count 7 -----------
+	 partition=0
+	 header count:6
+
+----------- punctuate count 8 -----------
+	 partition=1
+	 header count:8
+
+----------- punctuate count 9 -----------
+	 partition=0
+	 header count:8
+
+----------- punctuate count 10 -----------
+	 partition=1
+	 header count:10
+
+----------- punctuate count 11 -----------
+	 partition=0
+	 header count:10
+
+----------- punctuate count 13 -----------
+	 partition=1
+	 header count:12
+
+----------- punctuate count 12 -----------
+	 partition=0
+	 header count:12
+
+----------- punctuate count 14 -----------
+	 partition=0
+	 header count:14
+
+----------- punctuate count 15 -----------
+	 partition=1
+	 header count:15
+
+----------- punctuate count 16 -----------
+	 partition=0
+	 header count:16
+
+----------- punctuate count 17 -----------
+	 partition=1
+	 header count:17
+
+----------- punctuate count 19 -----------
+	 partition=1
+	 header count:18
+
+----------- punctuate count 18 -----------
+	 partition=0
+	 header count:18
+
+----------- punctuate count 20 -----------
+	 partition=0
+	 header count:20
+
+----------- punctuate count 21 -----------
+	 partition=1
+	 header count:21
+
+1
+----------- punctuate count 22 -----------
+	 partition=0
+	 header count:21
+
+Exception in thread "streams-wordcount-processor-03b0b470-2435-4f25-9f30-823bdcc31688-StreamThread-2" org.apache.kafka.streams.errors.StreamsException: stream-thread [streams-wordcount-processor-03b0b470-2435-4f25-9f30-823bdcc31688-StreamThread-2] task [0_1] Exception caught while punctuating processor 'Process'
+	at org.apache.kafka.streams.processor.internals.StreamTask.punctuate(StreamTask.java:597)
+	at org.apache.kafka.streams.processor.internals.PunctuationQueue.mayPunctuate(PunctuationQueue.java:54)
+	at org.apache.kafka.streams.processor.internals.StreamTask.maybePunctuateSystemTime(StreamTask.java:830)
+	at org.apache.kafka.streams.processor.internals.TaskManager.punctuate(TaskManager.java:522)
+	at org.apache.kafka.streams.processor.internals.StreamThread.maybePunctuate(StreamThread.java:999)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:890)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:746)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:722)
+Caused by: java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:909)
+Caused by: java.util.ConcurrentModificationException
+
+	at java.util.ArrayList$Itr.next(ArrayList.java:859)
+	at org.apache.kafka.common.header.internals.RecordHeaders$1.next(RecordHeaders.java:138)
+	at org.apache.kafka.common.header.internals.RecordHeaders$1.next(RecordHeaders.java:131)
+	at org.apache.kafka.streams.examples.wordcount.ConcurrentModificationExceptionDemo$MyProcessorSupplier$1.lambda$init$0(ConcurrentModificationExceptionDemo.java:87)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.lambda$punctuate$3(ProcessorNode.java:161)
+	at org.apache.kafka.streams.processor.internals.metrics.StreamsMetricsImpl.maybeMeasureLatency(StreamsMetricsImpl.java:806)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.punctuate(ProcessorNode.java:161)
+	at org.apache.kafka.streams.processor.internals.StreamTask.lambda$punctuate$2(StreamTask.java:593)
+	at org.apache.kafka.streams.processor.internals.metrics.StreamsMetricsImpl.maybeMeasureLatency(StreamsMetricsImpl.java:806)
+	at org.apache.kafka.streams.processor.internals.StreamTask.punctuate(StreamTask.java:593)
+	... 7 more
+----------- punctuate count 23 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 24 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 25 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 26 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 27 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 28 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 29 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 30 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 31 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 32 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 33 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 34 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 35 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 36 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 37 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 38 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 39 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 40 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 41 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 42 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 43 -----------
+	 partition=0
+	 header count:21
+
+----------- punctuate count 44 -----------
+	 partition=0
+	 header count:21
+
+
+> Task :streams:examples:ConcurrentModificationExceptionDemo.main() FAILED
+
+Execution failed for task ':streams:examples:ConcurrentModificationExceptionDemo.main()'.
+> Process 'command '/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/bin/java'' finished with non-zero exit value 143
+
+
