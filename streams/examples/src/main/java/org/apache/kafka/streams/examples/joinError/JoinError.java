@@ -17,6 +17,7 @@
 package org.apache.kafka.streams.examples.joinError;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.common.config.TopicConfig;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.KafkaStreams;
 import org.apache.kafka.streams.StreamsBuilder;
@@ -25,20 +26,18 @@ import org.apache.kafka.streams.kstream.Consumed;
 import org.apache.kafka.streams.kstream.KTable;
 import org.apache.kafka.streams.kstream.Materialized;
 import org.apache.kafka.streams.state.Stores;
+import org.rocksdb.CompressionType;
 
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.CountDownLatch;
 
+
 /**
- * Demonstrates, using the high-level KStream DSL, how to read data from a source (input) topic and how to
- * write data to a sink (output) topic.
- * <p>
- * In this example, we implement a simple "pipe" program that reads from a source topic "streams-plaintext-input"
- * and writes the data as-is (i.e. unmodified) into a sink topic "streams-pipe-output".
- * <p>
- * Before running this example you must create the input topic and the output topic (e.g. via
- * bin/kafka-topics.sh --create ...), and write some data to the input topic (e.g. via
- * bin/kafka-console-producer.sh). Otherwise you won't see any data arriving in the output topic.
+ * Before running this example you must create the input topics in_a in_b, in_c, in_d  and the output topic "output" (e.g. via
+ * bin/kafka-topics.sh --create ...), and write some data to the input topic
  */
 public class JoinError {
 
@@ -53,6 +52,8 @@ public class JoinError {
     private static final String STORE_NAME_D = "store_d";
 
     private static int count = 0;
+
+    private Map<String, String> loggingconfig = new HashMap<>();
 
     public static void main(final String[] args) {
         final Properties props = new Properties();
@@ -72,7 +73,7 @@ public class JoinError {
                 .withKeySerde(Serdes.String())
                 .withValueSerde(Serdes.String())
                 .withCachingEnabled()
-            //.withLoggingEnabled(ImmutableMap.of(TopicConfig.COMPRESSION_TYPE_CONFIG, CHANGELOG_COMPRESSION_TYPE)) TODO maybe we need this?
+            .withLoggingEnabled(Collections.singletonMap(TopicConfig.COMPRESSION_TYPE_CONFIG, CompressionType.ZSTD_COMPRESSION.getLibraryName()))
         );
         KTable<String, String> tableB = builder.table(INPUT_TOPIC_TABLE_B,
             Consumed.with(Serdes.String(), Serdes.String()),
@@ -80,7 +81,7 @@ public class JoinError {
                 .withKeySerde(Serdes.String())
                 .withValueSerde(Serdes.String())
                 .withCachingEnabled()
-            //.withLoggingEnabled(ImmutableMap.of(TopicConfig.COMPRESSION_TYPE_CONFIG, CHANGELOG_COMPRESSION_TYPE)) TODO maybe we need this?
+                .withLoggingEnabled(Collections.singletonMap(TopicConfig.COMPRESSION_TYPE_CONFIG, CompressionType.ZSTD_COMPRESSION.getLibraryName()))
         );
         KTable<String, String> tableC = builder.table(INPUT_TOPIC_TABLE_C,
             Consumed.with(Serdes.String(), Serdes.String()),
@@ -88,7 +89,7 @@ public class JoinError {
                 .withKeySerde(Serdes.String())
                 .withValueSerde(Serdes.String())
                 .withCachingEnabled()
-            //.withLoggingEnabled(ImmutableMap.of(TopicConfig.COMPRESSION_TYPE_CONFIG, CHANGELOG_COMPRESION_TYPE)) TODO maybe we need this?
+                .withLoggingEnabled(Collections.singletonMap(TopicConfig.COMPRESSION_TYPE_CONFIG, CompressionType.ZSTD_COMPRESSION.getLibraryName()))
         );
         KTable<String, String> tableD = builder.table(INPUT_TOPIC_TABLE_D,
             Consumed.with(Serdes.String(), Serdes.String()),
@@ -96,7 +97,7 @@ public class JoinError {
                 .withKeySerde(Serdes.String())
                 .withValueSerde(Serdes.String())
                 .withCachingEnabled()
-            //.withLoggingEnabled(ImmutableMap.of(TopicConfig.COMPRESSION_TYPE_CONFIG, CHANGELOG_COMPRESSION_TYPE)) TODO maybe we need this?
+                .withLoggingEnabled(Collections.singletonMap(TopicConfig.COMPRESSION_TYPE_CONFIG, CompressionType.ZSTD_COMPRESSION.getLibraryName()))
         );
 
         tableA.leftJoin(tableB, JoinError::joinB)
